@@ -1,0 +1,327 @@
+  body{
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .hero {
+        width: 100%;
+        height: 500px;
+        background-image: url("hero.png");
+        background-size: cover;
+        background-position: center;
+        position: relative;
+      }
+
+      .text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        width: 100%;
+        padding: 10px;
+      }
+      
+      .text h3 {
+        font-weight: 300;
+        margin: 0;
+      }
+
+      .about {
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      .about img {
+        width: 70px;
+        margin-bottom: 20px;
+      }
+
+      .about p {
+        font-size: 20px;
+        font-weight: 400;
+        margin: 0 auto;
+        max-width: 800px;
+      }
+
+      .image-box {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .image-box a {
+        display: block;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .image-box img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+        opacity: 80%;
+        transition: opacity 0.4s ease-in-out;
+      }
+
+      .image-box a:hover img {
+        opacity: 0.7;
+      }
+
+      .text-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #FFFFFF;
+        font-size: 2rem;
+        font-weight: 200;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        text-align: center;
+        z-index: 1;
+        white-space: nowrap;
+      }
+
+      .image-box a::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: 2px solid transparent;
+        transition: all 0.4s ease-in-out;
+        z-index: 1;
+      }
+
+      .image-box a:hover::before {
+        border-color:#B0B0B0;
+        top: 10%;
+        left: 10%;
+        right: 10%;
+        bottom: 10%;
+      }
+
+      @media (max-width: 768px) {
+        .hero {
+          height: 300px;
+        }
+
+        .hero .text {
+          width: 90%;
+          padding: 10px;
+        }
+
+        .text h3 {
+          font-size: 1.5rem;
+        }
+
+        .about p {
+          font-size: 16px;
+        }
+
+        .about img {
+          display: none;
+        }
+
+        .text-overlay {
+          font-size: 1rem;
+        }
+      }
+      
+      .testimonials {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    background-image: url("homebg.jpg");
+    background-size: cover;
+}
+
+.testimonial-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.testimonials h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-left: 90px;
+}
+
+.testimonial-text {
+    font-size: 1rem;
+    font-style: italic;
+    margin-bottom: 20px;
+    margin-left: 90px;
+    color: #333;
+}
+
+.client-info {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 120px;
+}
+
+.client-info i {
+    font-size: 2rem;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.client-info p {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+@media (max-width: 768px) {
+    .testimonials h4 {
+        font-size: 1.3rem;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .testimonial-text {
+        font-size: 0.9rem;
+        padding: 0 15px;
+        margin-left: 0; 
+        text-align: center;
+    }
+
+    .client-info {
+        justify-content: center;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonials h4 {
+        font-size: 1rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .testimonial-text {
+        font-size: 0.85rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .client-info {
+        flex-direction: column;
+        margin-left: 0; 
+        text-align: center;
+    }
+
+    .client-info i {
+        margin: 0 0 5px 0;
+    }
+}
+hr{
+  border-bottom: 1px solid; 
+}
+.custom {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #fff;
+}
+
+.name h3 {
+    padding-bottom: 9px;
+}
+
+.name h3, .contact h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #333;
+}
+
+.pay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .name h3, .contact h3 {
+        font-size: 1.2rem;
+    }
+
+    .pay {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .pay img {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 60%;
+    }
+}
+
+@media (max-width: 480px) {
+    .name h3, .contact h3 {
+        font-size: 1rem;
+    }
+}
+
+.footer {
+    background-color: #fff;
+    color: #000;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+    border-top: 1px solid ;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer .social {
+    margin-top: 10px;
+}
+
+.footer .social a {
+    color: #000; 
+    margin: 10px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.footer .social a:hover {
+    color: #ccc;
+}
+
+@media (max-width: 768px) {
+    .footer .social {
+        margin-top: 20px;
+    }
+}
+      .styles-section {
+        padding: 50px 20px;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .styles-section h3 {
+        margin-top: 20px;
+        font-weight: 300;
+        text-align: center;
+      }
+
+      .styles-section p {
+        margin-top: 15px;
+        text-align: center;
+        font-size: 1.1rem;
+        line-height: 1.6;
+      }
+
+      .styles-section .more-info {
+        margin-top: 10px;
+        text-align: justify;
+        font-size: 0.9rem;
+        color: #333;
+      }
